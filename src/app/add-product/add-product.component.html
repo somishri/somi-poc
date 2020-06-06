@@ -1,0 +1,61 @@
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Material form contact -->
+<body >
+    <div class="card">
+
+    <h5 class="card-header bg-dark">
+        <strong style="color: white">Add Product</strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="container">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;"  (ngSubmit)="addProduct(f)" #f=ngForm>
+          
+            <!-- Name -->
+            <div class="md-form mt-3">
+                    <label for="materialContactFormName">Name</label>
+                <input type="text"  name="name" ngModel class="form-control">
+               
+            </div>  <div class="md-form">
+                    <label for="materialContactFormMessage">Description</label>
+                <textarea id="materialContactFormMessage" name="description" class="form-control md-textarea" rows="3" ngModel></textarea>
+              
+            </div>
+         
+           
+            <!-- E-mail -->
+            <div class="md-form">
+                    <label >Price</label>
+                <input type="number"  class="form-control" ngModel name="price">
+               
+            </div>
+        
+            <div class="md-form">
+                    <label >Image</label>
+                <input type="text"  class="form-control" ngModel name="productImage">
+             
+            </div>
+           
+            <div class="md-form">
+                    <label >Quantity</label>
+                <input type="number"  class="form-control" ngModel name="quantity">
+             
+            </div>
+           <br>
+            <button class="btn btn-success" style="width: 100%" type="submit">Send</button>
+
+        </form>
+
+
+    </div>
+
+</div>
+</body>
